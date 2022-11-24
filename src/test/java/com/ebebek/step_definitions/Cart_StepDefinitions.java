@@ -2,7 +2,6 @@ package com.ebebek.step_definitions;
 
 import com.ebebek.pages.BasePage;
 import com.ebebek.pages.CartPage;
-import com.ebebek.pages.LoginPage;
 import com.ebebek.pages.ProductPage;
 import com.ebebek.utilities.BrowserUtils;
 import com.ebebek.utilities.ConfigurationReader;
@@ -10,19 +9,13 @@ import com.ebebek.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Cart_StepDefinitions {
     BasePage basePage = new BasePage();
     ProductPage productPage = new ProductPage();
     CartPage cartPage = new CartPage();
-    LoginPage loginPage = new LoginPage();
 
     @Given("user is at the ebebek home page")
     public void user_is_at_the_ebebek_home_page() {
@@ -35,57 +28,24 @@ public class Cart_StepDefinitions {
         basePage.searchBox.sendKeys(Keys.ENTER);
     }
 
-//    @Then("user sees {string} in the page title")
-//    public void user_sees_in_the_page_title(String string) {
-//        String actualTitle = productPage.searchResultHeader.getText();
-//        Assert.assertEquals(string, actualTitle);
-//    }
-
     @When("user clicks the first product")
     public void user_clicks_the_first_product() {
         productPage.firstBiberon.click();
     }
 
-//    @Then("user sees {string} in the product page title")
-//    public void user_sees_in_the_product_page_title(String string) {
-//        Assert.assertTrue(Driver.getDriver().getTitle().contains("Lansinoh Hoşgeldin Bebek Biberon Seti - ebebek"));
-//    }
-
-//    @Then("user sees {string} at the product title")
-//    public void user_sees_at_the_product_title(String string) {
-//        Assert.assertTrue(Driver.getDriver().getTitle().contains("Hoşgeldin Bebek Biberon Seti"));
-//    }
-
     @When("user clicks Sepete Ekle button")
     public void user_clicks_sepete_ekle_button() {
         productPage.addToCartButton.click();
     }
-//    @Then("user sees Ürün Sepetinizde window")
-//    public void user_sees_ürün_sepetinizde_window() {
-//        String text = productPage.productAddedToCartMessage.getText();
-//        Assert.assertEquals(" Ürün Sepetinizde ", text);
-//    }
 
     @Then("user clicks Sepeti Gör button")
     public void user_clicks_sepeti_gör_button() {
         productPage.showCartButton.click();
     }
 
-//    @Then("sees {string} in the page title")
-//    public void sees_in_the_page_title(String string) {
-//
-//    }
-
     @Then("user sees {string} in the cart item list")
     public void user_sees_in_the_cart_item_list(String string) {
         BrowserUtils.verifyElementDisplayed(cartPage.cartItem);
-
-//        List<WebElement> cartItems = cartPage.cartItem.findElements(By.className("basket-product-item"));
-//        List<String> cartItemsString = new ArrayList<>();
-//        for (WebElement cartItem : cartItems) {
-//            cartItemsString.add(cartItem.getText());
-//        }
-//        Assert.assertTrue(cartItemsString.contains("Hoşgeldin Bebek Biberon Seti"));
     }
 
 }

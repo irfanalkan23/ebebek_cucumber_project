@@ -21,7 +21,8 @@ import org.junit.runner.RunWith;
 
         //true --> "I don't want to run my java selenium code. What I want is; if I have extra snippets, I just want to get them"
         //true --> I want to get snippets
-        dryRun = false,         // false --> I want to run my java selenium code.
+        // false --> I want to run my java selenium code.
+        dryRun = false,
 
         tags = "@wip",
         publish = true          // true / false
