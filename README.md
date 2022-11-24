@@ -1,5 +1,11 @@
-# Task
-Ebebek Test Otomasyonu (UI)
+# TASK-1 : Manuel Test Senaryosu
+Sepet sayfasındaki işlemler için işlevsel test senaryoları geliştiriniz.
+
+Link: https://github.com/irfanalkan23/ebebek_cucumber_project/blob/master/Ebebek%20Manuel%20Test%20Senaryosu.docx
+
+Link: https://github.com/irfanalkan23/ebebek_cucumber_project/blob/master/Ebebek%20Manuel%20Test%20Senaryosu.xlsx
+
+# TASK-2 : Ebebek Test Otomasyonu (UI)
 
 www.e-bebek.com alışveriş sepeti fonksiyonel testi Java-Cucumber-Selenium framework ile yapılmıştır.
 
@@ -26,4 +32,9 @@ Aşağıdaki test senaryosunu Cucumber, Selenium ve istediğiniz programlama dil
 5. "Sepete Ekle" butonuna tıklanır.
 6. "Sepeti Gör” butonuna tıklanır.
 7. Ürünün sepete eklendiği kontrol edilir.
+
+# TASK-3 : Test Otomasyonu – API
+API isteği sonucunun (HTTP Status Code) kontrolünü gerçekleştiren aşağıdaki test senaryosunu istediğiniz programlama dili ile geliştiriniz.
+
+Senaryo: Seçilecek birer tane GET ve POST isteği için “HTTP Status Code” 200 (başarılı), değilse (başarısız) olan test senaryosu. (http://generator.swagger.io)
 
