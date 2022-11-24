@@ -38,3 +38,4 @@ API isteği sonucunun (HTTP Status Code) kontrolünü gerçekleştiren aşağıd
 
 Senaryo: Seçilecek birer tane GET ve POST isteği için “HTTP Status Code” 200 (başarılı), değilse (başarısız) olan test senaryosu. (http://generator.swagger.io)
 
+Task Solution Link : https://github.com/irfanalkan23/ebebek_cucumber_project/blob/master/src/test/java/com/ebebek/apiTest/API_Test.java
